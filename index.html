@@ -2,7 +2,8 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <title>我的视频播放器</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的视频播放页</title>
     <style>
         * {
             margin: 0;
@@ -15,21 +16,26 @@
             justify-content: center;
             align-items: center;
             min-height: 100vh;
+            padding: 20px;
         }
-        .video-box {
-            width: 90%;
-            max-width: 900px;
+        .video-container {
+            width: 100%;
+            max-width: 1000px;
+            background: #000;
+            border-radius: 8px;
+            overflow: hidden;
         }
         video {
             width: 100%;
-            border-radius: 8px;
+            display: block;
             outline: none;
         }
     </style>
 </head>
 <body>
-    <div class="video-box">
-        <video src="test.mp4" controls></video>
+    <div class="video-container">
+        https://bcyz2517.oss-cn-hangzhou.aliyuncs.com/test.mp4
+        <video src="https://bcyz2517.oss-cn-hangzhou.aliyuncs.com/test.mp4" controls preload="auto"></video>
     </div>
 </body>
 </html>
